@@ -16,4 +16,4 @@
 
 * What is a merge conflict?
 
-*A merge conflict is when we combine two files but something overlapped so the two puzzle pieces couldn't match up.
+*A merge conflict is when we combine two files boot something overlapped so the two puzzle pieces couldn't match up.
