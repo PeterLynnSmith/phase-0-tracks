@@ -13,3 +13,6 @@
 .list{
 	font-size: .8em;
 }
+a.links:hover{
+	color: red;
+}
