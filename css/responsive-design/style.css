@@ -9,9 +9,19 @@ cite {
   margin-top: 10px;
 }
 
+#external-links {
+  float: right;
+  display: inline-block;
+  vertical-align: text-bottom;
+
+}
+
+#external-links h1 {
+  padding-left: 40px;
+}
+
 #external-links ul {
   list-style-type: none;
-  padding-left: 0px;
 }
 
 /* you're welcome to edit the
@@ -29,4 +39,24 @@ figure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+
+body {
+  max-width: 960px;
+}
+
+main {
+  width: 79%;
+}
+
+@media screen and (max-width: 500px) {
+  img {
+  width: 50%;
+  }
+  main {
+  width: 55%;
+  }
+  body {
+  background-color: green;
+  }
 }
