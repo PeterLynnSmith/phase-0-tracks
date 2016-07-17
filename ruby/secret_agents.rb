@@ -43,7 +43,8 @@ def decode(encoded_secret)
 # end method
 end
 
-decode(encode("swordfish"))
+#decode(encode("swordfish"))
+
 #This works because the encode method evaluates 
 #to a string which the decode method can then evaluate.
 
