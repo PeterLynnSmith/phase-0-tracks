@@ -1,8 +1,20 @@
-#wolves_like_sunshine = true
-#wolves_like_garlic = true
-#vampires_like_sunshine = false
-#vampires_like_garlic = false
+# I couldn't figure out how to make either of the loops required.
+# I tried the employees processed one and it didn't work but 
+# I couldn't come up with anything close for the loop asking 
+# allergies. I would have continued trying but I am out of time.
+# I will be in office hours to discuss what I don;t know about
+#implementing loops.
 
+
+#puts "How many employees will be processed?"
+#	employees_processed = gets.chomp
+#	number = 0 
+#	until number = employees_processed
+#		puts vamp_detector
+#	number = number + 1
+#	end
+
+#def vamp_detector
 puts "What's your name?"
 	name = gets.chomp
 	name.downcase!
@@ -44,11 +56,15 @@ if knows_age && likes_garlic && not_immortal
 elsif !knows_age && !likes_garlic && !not_immortal
 	puts "almost certainly a vampire"
 elsif knows_age == false
-	abort "probably a vampire"
+	puts "probably a vampire"
 elsif likes_garlic == false
-	abort "probably a vampire"
+	puts "probably a vampire"
 elsif not_immortal == false
-	abort "probably a vampire"
+	puts "probably a vampire"
 else
-	abort "results inconclusive"
+	puts "results inconclusive"
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+#end
+
