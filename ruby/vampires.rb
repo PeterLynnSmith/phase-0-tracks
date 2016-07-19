@@ -2,7 +2,7 @@
 # I tried the employees processed one and it didn't work but 
 # I couldn't come up with anything close for the loop asking 
 # allergies. I would have continued trying but I am out of time.
-# I will be in office hours to discuss what I don;t know about
+# I will be in office hours to discuss what I don't know about
 #implementing loops.
 
 
