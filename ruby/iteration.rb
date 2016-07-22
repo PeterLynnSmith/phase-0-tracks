@@ -18,12 +18,12 @@ car_maker.each do |maker|
 end
 
 car_maker.map! do |maker|
-    p maker.upcase
+    maker.upcase	#removed p 
 end
 
-p car_maker
+puts car_maker #changed p to puts
 
-
+				#this is a key(index) => value(as in array)
 car_make_model = { "Honda" => "Civic" , "Toyota" => "Prius" , "Ford" => "F-150"}
 puts car_make_model
 
