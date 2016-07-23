@@ -33,6 +33,12 @@ car_make_model.each do |maker, model|
     puts "This is a car model named #{maker} and its model is #{model}." 
 end
 
+car_make_model.map do |make, model|
+    model.downcase!
+end
+
+puts car_make_model
+
 car_maker.delete_if { |maker| maker.length <= 4}
 p car_maker
 
@@ -45,7 +51,7 @@ p car_maker
 car_maker.map!.take_while { |maker| maker.length == 6}
 p car_maker
 
-car_make_model.delete_if {|make, model| model.include? "C"}
+car_make_model.delete_if {|make, model| model.include? "c"}
 p car_make_model
 
 car_make_model.keep_if {|make, model| model.length > 4}
