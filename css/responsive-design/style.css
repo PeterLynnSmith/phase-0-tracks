@@ -11,9 +11,6 @@ cite {
 
 #external-links {
   float: right;
-  display: inline-block;
-  vertical-align: text-bottom;
-
 }
 
 #external-links h1 {
@@ -46,7 +43,7 @@ body {
 }
 
 main {
-  width: 79%;
+  width: 756px;
 }
 
 @media screen and (max-width: 500px) {
