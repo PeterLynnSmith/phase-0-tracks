@@ -28,6 +28,7 @@ puts calculate(20,"+",5)
 puts calculate(20,"-",5)
 puts calculate(20,"*",5)
 puts calculate(20,"/",5)
-
+#calculate(problem)
 
 # I am unable to do the majority of the challenge because I cant get past the user interface portion.
+# When I try to use the interface I either get a wrong number of arguments error or a undefined variable error.

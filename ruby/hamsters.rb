@@ -1,30 +1,32 @@
-puts "hamster's name"
-	name = gets.chomp
-puts "how loud is the hammy for 1 to 10"
-	volume = gets.chomp.to_i
-puts "what is the fur color"
-	color = gets.chomp
-puts "do they seem friendly and healthy (true or false)"
-	adoptable = gets.chomp
-puts "estimated age, if unknown mark n/a"
-	age = gets.chomp
+puts "What is your hamster's name?"
+    name = gets.chomp
 
-puts "The hamster's name is #{name}"
-puts "The hamster's volume from 1 to 10 is #{volume}"
-puts "The hamster's fur color is #{color}"
+puts "How loud is #{name} on a scale from one to ten?"
+    volume = gets.chomp.to_i
 
-if adoptable == "true"
-	adoptable = true
-	puts "This hamster is great for adopting!"
-else 
-	adoptable = false
-	puts "Adopt a different hamster..."
-end
+puts "What color is their fur?"
+    color = gets.chomp
+
+puts "Do you think they're a good candidate for adoption? true/false"
+    adoption = gets.chomp
+
+puts "Estimated age? If unknown enter n/a"
+    age = gets.chomp
+
+puts "The hamster's name is #{name}, they're about a(n) #{volume} out of ten
+on the noise scale. Their fur is #{color}."
+
 
 if age == "n/a"
-	puts "We don't know how long you'll have to deal with this thing."
-	age = nil
-else 
-	age = age.to_i
-	puts "This hamster is #{age} years old."
+    age = nil
+    puts "We don't know how old #{name} is"
+else
+    puts "#{name} is #{age} years old."
 end
+
+if adoption == "true"
+    puts "#{name} is adoptable"
+else adoption == "false"
+    puts "#{name} is not adoptable"
+end
+

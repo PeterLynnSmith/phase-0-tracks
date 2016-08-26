@@ -14,46 +14,44 @@
 #this will split up the first and last name 
 puts "What name would you like an alias for?"
 	real_name = gets.chomp.downcase.split
-p real_name 
 #this will switch the first and last name
 real_name[0], real_name[1] = real_name[1], real_name[0]
-p real_name
+
 #next I need to make one array for vowels and another for consenants
-vowels = ["a","e","i","o","u"]
+
 consenants = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
-#now i'll try to connect them
-#def alias_maker_vowels(letter)
-#	 letter do |vowel|
-#		if vowels.include?(vowel)
-#			vowels.rotate(1)[vowels.index(vowel)]
-#		else
-#			vowel
-#		end
-#	end
-#	new_letter.join
-#end
-#alias_maker_vowels(real_name)
+#now i'll try to connect everything 
 
-#well that definitely didnt work. I tried to use a method that 
-#someone on stackoverflow posted but it didnt really apply and it keeps saying undefined method
+first_draft_alias = real_name[0].split(//) 
 
-#now i'll try it for each letter...
+#real_name.each do
+vowels = ["a","e","i","o","u"]	
 
-real_name.length.times do 
-	if real_name[0] == "a" 
-		real_name[0] = "e"
+#print first_draft_alias
+
+alias_name = ""
+
+real_name.each do |name|
+	name.split("").each do |letter|
+		if vowels.include? letter 
+			original_index = vowels.index(letter)
+			next_index = original_index + 1
+				if original_index == 4
+					next_index = 0
+				end
+			alias_letter = vowels[next_index]
+			alias_name = alias_name + alias_letter
+		else
+			consenants.include? letter
+			original_index = consenants.index(letter)
+			next_index = original_index + 1 
+				if original_index == consenants.length - 1
+					next_index = 0
+				end
+			alias_letter = consenants[next_index]
+			alias_name = alias_name + alias_letter
+		end
 	end
+	alias_name = alias_name + " "
 end
-
-# I cant even get it to change the first letter if its "a"
-
-
-
-
-
-
-
-
-
-
-	
+	print alias_name
