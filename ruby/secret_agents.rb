@@ -11,39 +11,56 @@
 # length = original_string.length
 # puts length
 def encode(password)
+#we need a variable for our loop 
 i = 0
+#determine string length so we know how to iterate through it
 length = password.length
+#iterate through it
     while i < length
+    	#edge case for z
         if password[i] == "z"
            password[i]== "a"
         else
+        #overwrite the string with the new string that's encoded
            password[i] = password[i].next
         end
+        #make sure your loop gets there
         i += 1
     end
+    #make password a global variable
     return password
 end
-
+#make a method to decrypt encrypted strings
 def decode(encoded_password)
+#make a variable called alphabet that is the alphabet so that we can manipulate the alphabet
 alphabet = "abcdefghijklmnopqrstuvwxyz"
+#we need a variable for our loop 
 i = 0
+#lets make a loop that lasts as long as the length of the string we want to decrypt
     while i < encoded_password.length
+    	#assign a local variable (within this loop) that is the 
         letter = encoded_password[i]
+        #edge case for a
         if letter == "a"
            letter == "z"
         else
+        	#for everything besides the edge case, lower the index in the alphabet string by 1
            encoded_password[i] = alphabet[alphabet.index(letter) - 1]
         end
+     #make sure the loop gets to the length of the user's string
     i += 1
     end
+    #make encoded_secret a global variable
     return encoded_password
 end
+#add a user interface that chooses one of the variables
 puts "Would you like to decode or encode?"
 selection = gets.chomp
 
 puts "What is the password?"
 password = gets.chomp
 
+#select one of the methods to use based off of the user's initial response
 if selection == "encode"
     puts encode(password)
 elsif selection == "decode"
