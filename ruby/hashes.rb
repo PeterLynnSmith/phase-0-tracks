@@ -1,4 +1,5 @@
-#gather info and input responses to hash
+#gather info, make sure its the right data type, 
+#and input responses to hash
 responses = {}
 puts "Whats the client's name?"
 	responses[:name] = gets.chomp
@@ -17,7 +18,7 @@ puts "does your client like indoor plants? (y/n)"
 	elsif plant_pref == "n" 
 		responses[:likes_plants] = false
 	end
-
+#print the responses
 p responses
 #offer a way to correct an input
 puts "if you need to change something, what is the key of what you need to change? (see hash), otherwise enter 'none'"
@@ -28,6 +29,7 @@ puts "if you need to change something, what is the key of what you need to chang
 if correction == "none"
 	puts "Great job!"
 end
+#allow for corrections to be made
 if correction == ":name" || correction == "name"
 	puts "what is your new value for it?"
 	responses[:name] = gets.chomp
@@ -61,6 +63,7 @@ if correction == ":likes_plants" || correction == "likes_plants" || correction =
 	elsif plant_pref == "n" 
 		responses[:likes_plants] = false
 	end
+	#print the edited responses
 	p responses
 end
 
