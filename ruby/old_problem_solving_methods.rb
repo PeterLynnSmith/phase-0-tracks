@@ -1,25 +1,25 @@
 # release 0
 
-# def search_array(array, num_in_array)
-#   counter = 0
-#   result = 0
+def search_array(array, num_in_array)
+  counter = 0
+  result = 0
   
-#   array.each do
-#     if array.include?(num_in_array)
-#       result = counter
-#     else 
-#       return nil
-#     end
-#     counter += 1
-#   end
-#   return result
-# end 
+  array.each do
+    if array.include?(num_in_array)
+      result = counter
+    else 
+      return nil
+    end
+    counter += 1
+  end
+  return result
+end 
 
-# array = [42,89,23,1]
-# puts search_array(array, 1)
-# # => 3
-# puts  search_array(array, 24)
-# => nil
+array = [42,89,23,1]
+puts search_array(array, 1)
+# => 3
+puts  search_array(array, 24)
+#=> nil
 
 # release 1
 # def fib(num)
