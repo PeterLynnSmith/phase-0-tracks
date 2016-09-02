@@ -98,28 +98,28 @@ release 3
           #return the array
 =end
 
-# def bubble_sort(array)
-#   array_length = array.length
-#   loop do
-#     sort = false
+def bubble_sort(array)
+  array_length = array.length
+  loop do
+    sort = false
 
-#     (array_length -1).times do |num|
-#       if array[num] > array[num+1]
-#         array[num], array[num+1] = array[num+1], array[num]
-#         sort = true
-#       end
-#     end
+    (array_length -1).times do |num|
+      if array[num] > array[num+1]
+        array[num], array[num+1] = array[num+1], array[num]
+        sort = true
+      end
+    end
 
-#     break if not sort
-#   end
+    break if not sort
+  end
 
-#   array
-# end
+  array
+end
 
 
-# random_numbers = [9, 3, 7, 1, 6, 4, 8]
+random_numbers = [9, 3, 7, 1, 6, 4, 8]
 
-# puts bubble_sort(random_numbers)
+puts bubble_sort(random_numbers)
 
 
 
