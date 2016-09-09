@@ -21,6 +21,10 @@ class Puppy
   	puts "How do you do, human?"
   end
 
+  def initialize
+  	p "Initializing new puppy instance ..."
+  end
+
 end
 
 #driver code
