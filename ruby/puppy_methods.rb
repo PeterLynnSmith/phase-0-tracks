@@ -54,20 +54,20 @@ a = Gymnast.new
 
 puts a
 
-classes = []
+objects = []
 counter = 0
 until counter == 50
-	class_name = counter 
-	class_name = Gymnast.new
-	classes << class_name 
+	
+	instance = Gymnast.new
+	objects << instance 
 	counter = counter + 1
 	
 end
 
-p classes
+p objects
 
-classes.each do |instance|
-	puts "#{instance} #{instance.flip} d #{instance.jump}"
+objects.each do |instance|
+	puts "#{instance} #{instance.flip}  #{instance.jump}"
 end
 
 
