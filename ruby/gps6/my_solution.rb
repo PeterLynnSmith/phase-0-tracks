@@ -117,11 +117,22 @@ end
 # Reflection Section
 
 # What are the differences between the two different hash syntaxes shown in the state_data file?
-# What does require_relative do? How is it different from require?
-# What are some ways to iterate through a hash?
-# When refactoring virus_effects, what stood out to you about the variables, if anything?
-# What concept did you most solidify in this challenge?
+    #The "hashy-hash" is used to make a massive hash that contains hashes. The inline hash definition is better
+    #for smaller amounts of data contained within a bigger hash.
 
+# What does require_relative do? How is it different from require?
+    #require_relative references a file that is located in the same directory as the file referencing it
+    #require needs a more specific location of the file being referenced but it doesn't need to be in the 
+    #same directory
+
+# What are some ways to iterate through a hash?
+    #.map (changes the elements) and .each (references the elements)
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+    #the variables didn't need to be passed in as arguments because all the methods were in the same class.
+
+# What concept did you most solidify in this challenge?
+    #This challenge made it easier to understand how to use variables across different methods in the same key.
 
 
 
