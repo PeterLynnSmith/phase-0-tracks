@@ -31,22 +31,24 @@
 # steps: 
 	#iterate through hash and print the keys and values through interpolation in a sentence
 # output: a bunch of sentences
-grocery_list = {}
+
 def create_list(grocery_list, item_list)
 	item_list = item_list.split
 	item_list.each do |item|
 		grocery_list[item] = 1
 	end
 	puts grocery_list
+end
+
+def add(item)
+	grocery_l
 	
 end
+grocery_items = ""
+grocery_list = {}
+create_list(grocery_list, "apple peach banana")
 
-def add (grocery_list, item, quant=1)
-	my_list[item] = quant
-end
-
-my_list = create_list("apples bananas pizza")
-
+add("pear")
 
 
 
