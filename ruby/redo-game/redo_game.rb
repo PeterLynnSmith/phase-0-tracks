@@ -1,3 +1,14 @@
+#Pseudocode
+	#promt for word
+	#turn word into array
+	#make an array that is an underscore version of the array
+	#set the number of guesses that the user is allowed
+	#promt for guess
+	#if word array contains the guess, give feedback that is the
+		#altered underscore array
+	#repeat until guesses are used up
+	#give a 'congratulations' or 'you lost' message
+
 class Game
 	attr_reader :answer_array
 	def initialize
@@ -8,8 +19,6 @@ class Game
 		@answer_array = string.split('')
 		p @answer_array
 	end
-
-	
 
 end
 
