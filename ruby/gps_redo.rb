@@ -40,16 +40,41 @@ def create_list(grocery_list, item_list)
 	puts grocery_list
 end
 
-def add(item)
-	grocery_l
-	
+def add(hash, item, quantity=1)
+	hash[item] = quantity
+	hash
+end
+def delete(hash, item)
+	hash.delete(item)
+	hash
+end
+def update(hash, item, quantity)
+	hash[item] = quantity
+end
+def print(hash)
+	hash.each do |item, quantity|
+	puts "we need #{quantity} more #{item}(s)"
+	end
 end
 grocery_items = ""
 grocery_list = {}
 create_list(grocery_list, "apple peach banana")
 
-add("pear")
-
-
+# add(grocery_list, "pear", 1)
+# #puts grocery_list
+# delete(grocery_list, "banana")
+# #puts grocery_list
+# update(grocery_list, "peach", 20)
+# #puts grocery_list
+# print(grocery_list)
+add(grocery_list, "lemonade", 2)
+#print(grocery_list)
+add(grocery_list, "tomatoes", 3)
+#print(grocery_list)
+add(grocery_list, "onions", 1)
+add(grocery_list, "ice cream", 4)
+delete(grocery_list, "lemonade")
+update(grocery_list, "ice cream", 1)
+print(grocery_list)
 
 
