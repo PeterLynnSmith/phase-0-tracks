@@ -11,4 +11,8 @@ describe Game do
 		expect(game.underscore_array(["h", "e", "l", "l", "o"])).to eq ["_", "_", "_", "_", "_"]
 	end
 
+	it "decides the number of guesses available to User2 based off the number of letters in User1's word" do
+		expect(game.number_of_guesses([1,2,3])).to eq 3
+	end
+
 end
