@@ -12,8 +12,6 @@ function reverse(name) {
 	return newName
 }
 
-reverse(name)
-
 if (1 === 1) {
 	console.log(reverse(name))
 }
