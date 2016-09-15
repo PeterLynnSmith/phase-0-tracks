@@ -9,7 +9,13 @@
 //the fanciest solution or looking up built-in sorting 
 //functions. Note that "some string".length will do what you expect in JS.
 
+// create a function that goes through a length of words 
+// create a function that determines the length of a word
 
-// creat a function that determines the length of a word
+function printArray(array) {
+	console.log(array);
+}
 
-"some string".length
+
+printArray(["hello", "sup", "goodbye"])
+
