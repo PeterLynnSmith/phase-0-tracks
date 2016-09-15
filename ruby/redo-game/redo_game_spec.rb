@@ -23,4 +23,17 @@ describe Game do
 		expect(game.check_if_correct("h")).to eq ["h", "_", "_", "_", "_"]
 	end	
 
+	it "decreases guesses by 1" do
+		game.word_to_array("hello")
+		game.underscore_array
+		game.number_of_guesses(["h", "e", "l", "l", "o"])
+		expect(game.guesses_decreaser).to eq 4
+	end
+
+	it "continues the game in a loop, using the other methods." do
+		game.word_to_array("hello")
+		game.underscore_array
+		game.number_of_guesses(["h", "e", "l", "l", "o"])
+		game.guesses_decreaser
+	end
 end
