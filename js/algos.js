@@ -1,3 +1,9 @@
+// I was focused on studying for the assessment and didnt
+//leave enough time for this. I will work through it 
+// and get help in office hours and try to figure out 
+//what's going on 
+
+
 //write a function that takes an array
 //of words or phrases and returns the 
 //longest word or phrase in the array. 
@@ -12,10 +18,45 @@
 // create a function that goes through a length of words 
 // create a function that determines the length of a word
 
-function printArray(array) {
-	console.log(array);
+function sortArray(array) {
+	var index = 0
+	var string_length = 0
+	for (var i = 0; i< array.length; i++) {
+		length = array[i].length;
+		if (string_length < length) {
+			var index = i 
+			string_length = length
+		}
+	}
+	console.log(index);
 }
 
+//start by retreiving the names and storing them in an array
+function storeValues(hash) {
+	var keys = new Array();
+	var values = new Array();
+	for (var key in hash) {
+		keys.push(key);
+		values.push(hash[key]);
+	}
+	console.log(values);
+}
+	
+//this is as far as I got :( its already 10 and I have to turn it in
+// I will come back and add more
 
-printArray(["hello", "sup", "goodbye"])
+
+
+
+sortArray(["hello", "sup", "goodbye"])
+sortArray(["java", "script", "is", "crazy"])
+
+storeValues({name: "Steven", age: 54})
+
+storeValues({name: "Tamir", age: 54})
+
+
+
+
+
 
